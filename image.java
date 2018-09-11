@@ -49,12 +49,8 @@ public class image {
 	}
 
 	void emboss(){
-		System.out.println(height);
-		System.out.println(width);
-		System.out.println(width);
-
-		for (int i = width - 1; i > -1; i--) {
-			for (int j = height - 1; j > -1; j--) {
+		for (int i = height - 1; i > -1; i--) {
+			for (int j = width - 1; j > -1; j--) {
 				if (i == 0 || j == 0) {
 					thisImage[i][j].setRedValue(128);
 					thisImage[i][j].setGreenValue(128);

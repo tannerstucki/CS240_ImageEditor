@@ -15,14 +15,14 @@ public class ImageEditor {
 			thisImage = thisEditor.invertImage(thisImage);
 			writer(thisImage, args[1]);
 		}
-		else if (args[2].equals("emboss")) {
+		/*else if (args[2].equals("emboss")) {
 			thisImage = thisEditor.embossImage(thisImage);
 			writer(thisImage, args[1]);
-		}
-		/*else if (args[2].equals("emboss")) {
+		}*/
+		else if (args[2].equals("emboss")) {
 			thisImage.emboss();
 			writer(thisImage, args[1]);
-		}*/
+		}
 		else if (args[2].equals("motionblur")) {
 			thisImage = thisEditor.motionblurImage(thisImage, args[3]);
 			writer(thisImage, args[1]);
@@ -42,9 +42,9 @@ public class ImageEditor {
 				pw.println(thisImage.getArray()[i][j].getRedValue() + " ");
 				pw.println(thisImage.getArray()[i][j].getGreenValue() + " ");
 				pw.println(thisImage.getArray()[i][j].getBlueValue());
-				if (j < thisImage.getWidth() - 1) {
+				/*if (j < thisImage.getWidth() - 1) {
 					pw.println(" ");
-				}
+				}*/
 			}
 		}
 		pw.close();
